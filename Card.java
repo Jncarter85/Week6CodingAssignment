@@ -15,6 +15,11 @@ public class Card {
 	}
 	public void setName(String name) {
 		this.name = name;
+		
+	}
+	public void describe() {
+		System.out.println(name + " " + value);
+		
 	}
 
 }

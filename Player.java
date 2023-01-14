@@ -41,6 +41,12 @@ public class Player {
 		return hand.remove(0);
 	}
 	
+	public void describe() {
+		System.out.println(name);
+		System.out.println(hand);
+	}
+
+	
 	}
 
 

@@ -42,6 +42,8 @@ public class WarGame {
 		}
 	}
 	
+	
+	
 	private void findWinner(Player p, Player p2) {
 		if(p.getScore() > p2.getScore()) {
 			System.out.println("Player one wins");

@@ -1,6 +1,7 @@
 package Week6CodingAssignment;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.HashMap;
 import java.util.Map;
@@ -11,7 +12,7 @@ public class Deck {
 	private Map<String, Integer> cardMap = new HashMap<String, Integer>();
 	
 	private void initCardMap() {
-		for(int i=2; i<11; i++) {
+		for(int i = 2; i < 11; i++) {
 			cardMap.put(String.valueOf(i),i);
 		}
 		cardMap.put("Jack", 11);
@@ -34,7 +35,7 @@ public class Deck {
 				c.setValue(value);
 				cards.add(c);
 			});
-			}
+			}Collections.shuffle(cards);
 	
 	}
 
